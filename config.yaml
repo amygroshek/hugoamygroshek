@@ -23,6 +23,9 @@ menu:
       - Name: "cv"
         URL: "/cv/"
         Weight: 3
+      - Name: "tango"
+        URL: "/tango/"
+        Weight: 3.5
       - Name: "contact"
         URL: "/contact/"
         Weight: 4
@@ -36,7 +39,8 @@ params:
   description: "Avocation and Vocation"
   copyright: "&copy; Amy Groshek 2012 onwards"
   sidebarAbout: [
-    "I am a PhD student, sometime poet, freelance web developer, and Argentine tango instructor."
+    "I am a PhD student, sometime poet, freelance web developer, and Argentine tango instructor.",
+    "This landing page showcases my <strong>e-po</strong> projects. These electronic poems use programming languages and web browsers as formal constraints."
   ]
   # Contact page
      # Since this template is static, the contact form uses www.formspree.io as a
