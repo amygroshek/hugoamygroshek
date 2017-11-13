@@ -3,7 +3,7 @@ showonlyimage = false
 draft = false
 image = "img/slattery.png"
 date = "2017-11-12"
-title = "In which the plagarist is not addressed"
+title = "In which the plagiarist is not addressed"
 weight = 1
 +++
 
