@@ -1,0 +1,74 @@
+---
+author:
+  display_name: Amy G
+  email: amygroshek@gmail.com
+  first_name: Amy
+  last_name: Groshek
+  login: admin
+categories: []
+comments: true
+date: 2013-01-04T23:27:40Z
+excerpt:
+  options: {}
+meta:
+  _edit_last: "1"
+published: true
+status: publish
+tags:
+- git
+- moodle
+- php
+- postgresql
+title: Install Moodle on localhost with PostgreSQL
+type: post
+url: /2013/01/04/install-moodle-on-localhost-with-postgresql/
+---
+
+<p>Make sure your installation of psql is working. I had a really hard time with this because I've always just pasted in:</p>
+<pre class="lang:sh decode:true ">psql --version</pre>
+<p>If psql is running, you get a response like this:</p>
+<pre class="lang:sh decode:true ">psql (PostgreSQL) 9.0.4
+contains support for command-line editing </pre>
+<p>If you execute that command and you get something else, you might need to fiddle with your psql installation. There are many instructions for installing psql via homebrew, and this might do the trick, but you have to install xcode first. I ended up doing that, and then <a href="http://od-eon.com/blogs/calvin/os-x-lion-postgresql/">followed the instructions</a>.</p>
+<p>Once you've got psql working, let's go ahead and start a git clone on the branch of Moodle we want (this assumes you have a <a href="http://help.github.com/mac-set-up-git/">github account and ssh key set up</a>).</p>
+<pre class="lang:sh decode:true ">// cd into your mac's web dir
+cd /Lib*/Web*/Doc*/ 
+// Make a new dir to hold your repo clone. 
+// You need sudo if you're in the standard /Lib*/Web*/Doc*/ 
+// though you might eventually want to move away from that.
+sudo mkdir 21stable 
+// cd into your new dir
+cd 21stable
+// Clone the branch you want
+sudo git clone -b MOODLE_21_STABLE git://github.com/moodle/moodle.git
+// This process will run for a while.
+// Leave the terminal window open and let it run.
+// Open a new terminal window for the steps below.</pre>
+<p>While the git clone is running, let's create our moodledata directory.</p>
+<pre class="lang:sh decode:true ">// *Not* in the Documents dir
+cd /Lib*/Web*
+// Make directory
+sudo mkdir moodledata21
+// Permissions
+sudo chown -R www:admin moodedata21</pre>
+<p>We can also create our psql database and user, and grant permissions.</p>
+<pre class="lang:default decode:true ">// create your database (you may need to let postgres know who the user is, that's the -U postgres below)
+createdb moodle21 -U postgres
+// Access the db
+psql -d moodle21 -U postgres // set encoding to utf-8
+SET CLIENT_ENCODING TO 'UTF8';
+// Create user
+create user moodle21user with password 'password';
+// Grant privileges
+grant all privileges on database moodle21 to moodle21user;
+// List your databases, just to check and be sure
+\l
+// Exit
+\q</pre>
+<p>Once the git clone has finished, we set permissions for the Web directory:</p>
+<pre class="lang:default decode:true ">cd /Lib*/Web*/Doc*/
+// Ownership
+sudo chown -R www:admin 21stable
+// Permissions 
+sudo chmod -R 755 21stable</pre>
+<p>Now load up localhost/21stable/moodle. If you're prompted with ../install.php like normal, you're golden. Run through the installation prompts, entering the values we established in the steps above.</p>

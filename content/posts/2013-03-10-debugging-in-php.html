@@ -1,0 +1,38 @@
+---
+author:
+  display_name: Amy G
+  email: amygroshek@gmail.com
+  first_name: Amy
+  last_name: Groshek
+  login: admin
+categories: []
+comments: true
+date: 2013-03-10T23:10:25Z
+excerpt:
+  options: {}
+meta:
+  _edit_last: "1"
+published: true
+status: publish
+tags:
+- macports
+- php
+title: Debugging in PHP
+type: post
+url: /2013/03/10/debugging-in-php/
+---
+
+<p>When you transition from JavaScript to PHP, you soon find you're rather spoiled on <code>console.log()</code> and its compatriots. YUI even has its own fancy console logging utility to help out. With PHP, you can print to the page, or print a commented-out or CSS-hidden element to the page, but these options just feel gross. Not to mention that if I'm doing anything GUI-related, it's counterproductive.</p>
+<p>There is FirePHP. I've also read about printing vars to your HTTP header response. It all seems so convoluted compared to <code>console.log($my_var)</code> that I can't quite muster the initiative to get set up to use them. But one of my colleagues showed me a pretty simple way to trace out my variables without having to print them to the page.</p>
+<p>Use the following to write your variables to Apache's error log:</p>
+<pre class="lang:sh decode:true">error_log('$db_val_is_sane = '.$db_val_is_sane);  // Print a variable
+error_log(print_r($indexed_choices, true));       // Print an array</pre>
+<p>Then access your Apache error logs:</p>
+<pre class="lang:sh decode:true">// For an OSX MacPorts installation, this is where they're at.
+cd /opt/local/apache2/logs tail error_log 
+// Prints the last 10 logs to terminal (believe me, you don't want the whole file)
+tail error_log</pre>
+<p>It's a fair assumption that you're working on a Web page, and if that's the case, any change to your PHP will have to be followed by a browser reload. So, workflow as follows:</p>
+<p>1. Update your PHP file.<br />
+2. Refresh the relevant view or initiate the relevant script view with the necessary UI action.<br />
+3. Access the error_log.</p>

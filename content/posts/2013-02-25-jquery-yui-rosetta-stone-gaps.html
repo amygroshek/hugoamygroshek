@@ -1,0 +1,41 @@
+---
+author:
+  display_name: Amy G
+  email: amygroshek@gmail.com
+  first_name: Amy
+  last_name: Groshek
+  login: admin
+categories: []
+comments: true
+date: 2013-02-25T23:14:35Z
+excerpt:
+  options: {}
+meta:
+  _edit_last: "1"
+published: true
+status: publish
+tags:
+- jquery
+- yui
+title: 'jQuery / YUI : Rosetta Stone Gaps'
+type: post
+url: /2013/02/25/jquery-yui-rosetta-stone-gaps/
+---
+
+<p>Placed here for my own reference as it's so dang hard to find things in the YUI documentation. Further, when I do find these methods of Node in the YUI documentation, there are no accompanying examples, and I have to spend 15 minutes verifying that the method works as desired.</p>
+<p>For example, compare http://api.jquery.com/index/ with http://yuilibrary.com/yui/docs/api/classes/LazyModelList.html#method_indexOf.</p>
+<h3>Selection from a Selection</h3>
+<p>jQuery</p>
+<pre class="lang:js decode:true">var $selection = $('.selector');
+var refined = $selection.find('a');</pre>
+<p>YUI</p>
+<pre class="lang:js decode:true">var $selection = Y.all('.selector');
+var refined = $selection.filter('a');</pre>
+<h3>Index of Selected Item</h3>
+<p>jQuery</p>
+<pre class="lang:js decode:true">var $selection = $('.selector');
+var $index = $selection.index('a');</pre>
+<p>YUI</p>
+<pre class="lang:js decode:true">var $selection = Y.all('.selector');
+var refined = $selection.indexOf('a');</pre>
+<p>&nbsp;</p>

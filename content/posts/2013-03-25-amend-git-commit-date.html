@@ -1,0 +1,26 @@
+---
+author:
+  display_name: Amy G
+  email: amygroshek@gmail.com
+  first_name: Amy
+  last_name: Groshek
+  login: admin
+categories: []
+comments: true
+date: 2013-03-25T21:06:49Z
+excerpt:
+  options: {}
+meta:
+  _edit_last: "1"
+published: true
+status: publish
+tags:
+- git
+title: Amend Git Commit Date
+type: post
+url: /2013/03/25/amend-git-commit-date/
+---
+
+<p>You've been working on the same issue for a month, rebasing revisions back into the first commit. Now the date on the commit is from a month ago, and does not reflect when you last worked on it. This command will update the date of the commit:</p>
+<pre class="font:monospace line-height:30 top-margin:24 bottom-margin:24 lang:default decode:true">git commit --amend --date="$(date -R)"</pre>
+<p>It will then run you through the whole commit workflow. Don't be thrown: don't make any other changes, or get nervous that you haven't. Just run though the steps, exit your editor, and run the old `git log` to see the shiny new date.</p>

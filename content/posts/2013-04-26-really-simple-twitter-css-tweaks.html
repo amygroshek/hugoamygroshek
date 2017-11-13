@@ -1,0 +1,44 @@
+---
+author:
+  display_name: Amy G
+  email: amygroshek@gmail.com
+  first_name: Amy
+  last_name: Groshek
+  login: admin
+categories: []
+date: 2013-04-26T02:22:40Z
+excerpt:
+  options: {}
+meta:
+  _edit_last: "1"
+published: false
+status: publish
+tags:
+- css
+- wordpress
+title: Really Simple Twitter CSS Tweaks
+type: post
+url: /2013/04/26/really-simple-twitter-css-tweaks/
+---
+
+<p>I really like the <a href="http://wordpress.org/extend/plugins/really-simple-twitter-feed-widget/">Really Simple Twitter Feed Widget</a> for Wordpress, but retweets and things with a lot of links don't display well out of the box:</p>
+<p><a href="http://amygroshek.com/wp/wp-content/uploads/2013/04/Screen-Shot-2013-04-25-at-9.14.35-PM.png"><img src="assets/Screen-Shot-2013-04-25-at-9.14.35-PM-200x300.png" alt="Screen Shot 2013-04-25 at 9.14.35 PM" height="300" width="200" class="aligncenter size-medium wp-image-158" /></a></p>
+<p>Turns out WP has a default style for links in sidebar widgets:</p>
+<pre class="lang:css decode:true">.widget-area li a {
+    padding: 2px 0;
+    display: block;
+}</pre>
+<p>Now, for tweets, where we want a compact visual presentation, <code>display: block;</code> is just not the right way to go. I added the following simple tweak to styles.css:</p>
+<pre class="lang:css decode:true">.really_simple_twitter_widget li a {
+    display:inline;
+}</pre>
+<p>All fixed:</p>
+<p><a href="http://amygroshek.com/wp/wp-content/uploads/2013/04/Screen-Shot-2013-04-25-at-9.19.54-PM.png"><img src="assets/Screen-Shot-2013-04-25-at-9.19.54-PM.png" alt="Screen Shot 2013-04-25 at 9.19.54 PM" height="270" width="242" class="aligncenter size-full wp-image-159" /></a></p>
+<h3>Update</h3>
+<p>I added an additional fix to prevent short tweets from being wrapped by the subsequent tweet:</p>
+<pre class="lang:css decode:true ">.really_simple_twitter_widget li {
+    margin:0.5em;
+    display:inline-block;
+}</pre>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

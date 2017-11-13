@@ -1,0 +1,43 @@
+---
+author:
+  display_name: Amy G
+  email: amygroshek@gmail.com
+  first_name: Amy
+  last_name: Groshek
+  login: admin
+categories: []
+comments: true
+date: 2014-01-21T17:25:04Z
+excerpt:
+  options: {}
+meta:
+  _edit_last: "1"
+published: true
+status: publish
+tags:
+- /etc/exports
+- export
+- invalid
+- NFS
+- vagrant
+title: Vagrant NFS Export File Invalid
+type: post
+url: /2014/01/21/vagrant-nfs-export-file-invalid/
+---
+
+<p>I occasionally run into the following error when trying to <code>vagrant up</code>:</p>
+<pre class="lang:sh decode:true ">
+NFS is reporting that your exports file is invalid. Vagrant does
+this check before making any changes to the file. Please correct
+the issues below and execute "vagrant reload":
+
+exports:2: path contains non-directory or non-existent components: /Users/macpro/code/wip-HOSSUP-3518
+exports:2: no usable directories in export entry
+exports:2: using fallback (marked offline): /</pre>
+<p>I've been able to replicate the error by deleting a VM from my development directory. It seems that Vagrant must verify your <code>/etc/exports</code> file against your available VMs when running any <code>vagrant up</code>. If you routinely clone and delete VMs, you'll probably run into this issue. </p>
+<p>Last week I documented a workaround on <a title="View workaround on stack overflow" href="http://stackoverflow.com/a/21194926/590107">Stackoverflow</a>. But it looks like it might be even simpler:</p>
+<pre class="lang:sh decode:true ">vagrant halt // Yes, the VM is running, despite death rattle featured above.
+rm -rf /etc/exports // Remove the exports file. 
+vagrant up
+</pre>
+<p>Be sure to halt before attempting this. <code>vagrant reload</code> will not work. Vagrant recreates <code>/etc/exports</code> on the next <code>vagrant up</code>. </p>

@@ -1,0 +1,49 @@
+---
+author:
+  display_name: Amy G
+  email: amygroshek@gmail.com
+  first_name: Amy
+  last_name: Groshek
+  login: admin
+categories: []
+comments: true
+date: 2013-05-02T23:08:33Z
+excerpt:
+  options: {}
+meta:
+  _edit_last: "1"
+published: true
+status: publish
+tags:
+- css
+- javascript
+- minify
+- php
+- symfony2
+- YUI compressor
+title: Symfony2 Snippets
+type: post
+url: /2013/05/02/symfony2-snippets/
+---
+
+<p>Snippets and useful notes as I work with Symfony2 and learn the conventions.</p>
+<p>Clear the cache:</p>
+<pre class="lang:sh decode:true" title="Clear the cache">app/console cache:clear</pre>
+<p>If you do not flag this command for the environment it will run the command only for the dev environment (not what we want when testing CSS compression or JS minification). To clear cache for production:</p>
+<pre class="lang:default decode:true">app/console cache:clear --env prod</pre>
+<p>Update assets served by assetic (from your /src/... dir). <a title="Github Issue: Update assets by assetic" href="https://github.com/kriswallsmith/assetic/issues/53">Unless you have a symlink</a>, this has to be run every time you update your CSS or JS.</p>
+<pre class="lang:sh decode:true">app/console assets:install web</pre>
+<p>To add the symlink:</p>
+<pre class="lang:sh decode:true">app/console assets:install --symlink web</pre>
+<p>Another user mentions that symlinks will be obliterated when bundles are updated. :(</p>
+<p>After installing your assets, you have to "dump" them to /web. <strong>And</strong> you have to flag the environment when you do so:</p>
+<pre class="lang:default decode:true">// For production environment
+app/console assetic:dump --env prod 
+// For development environment
+app/console assetic:dump --env dev</pre>
+<p>The full set I run before checking something on production:</p>
+<pre class="lang:default decode:true crayon-selected">app/console cache:clear --env prod
+app/console assets:install web
+app/console assetic:dump --env prod</pre>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

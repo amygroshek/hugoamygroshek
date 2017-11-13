@@ -1,0 +1,43 @@
+---
+author:
+  display_name: Amy G
+  email: amygroshek@gmail.com
+  first_name: Amy
+  last_name: Groshek
+  login: admin
+categories: []
+comments: true
+date: 2014-04-11T15:59:50Z
+excerpt:
+  options: {}
+meta:
+  _edit_last: "1"
+published: true
+status: publish
+tags:
+- apache
+- homebrew
+- intl
+- LoadModule
+- moodle
+- opcache
+- php
+title: Homebrew, Apache, and PHP Extensions
+type: post
+url: /2014/04/11/homebrew-apache-and-php-extensions/
+---
+
+<p>I recently switched from MacPorts to Homebrew. The installation and setup of a Homebrew LAMP stack, using MariaDB and josegonzalez/homebrew-php, went smoothly. I used the following sources:</p>
+<ul>
+<li><a href="http://vanbosse.be/blog/detail/a-homebrew-lamp-stack">http://vanbosse.be/blog/detail/a-homebrew-lamp-stack</a></li>
+<li><a href="http://www.astonishdesign.com/blog/native-lamp-stack-mac-os-x"> http://www.astonishdesign.com/blog/native-lamp-stack-mac-os-x</a></li>
+<li><a href="http://joaquin.windmuller.ca/2012/08/02/lamp-on-mountain-lion-with-homebrew">http://joaquin.windmuller.ca/2012/08/02/lamp-on-mountain-lion-with-homebrew</a></li>
+</ul>
+<p>I included PHP extensions <code>intl</code> and <code>opcache</code> when installing with Homebrew. However, Moodle install insisted that the extensions were not available. While <code>php -m</code> showed the <code>intl</code> extension, <code>phpinfo()</code> showed a different version of PHP, and that neither extension was installed. </p>
+<p>After a great deal of research, I discovered that I had missed a step when reverting from MacPorts back to my native apache install. I needed to direct Apache to load the appropriate version of PHP. </p>
+<pre class="lang:default decode:true ">cd /etc/apache2
+sudo sublime httpd.conf</pre>
+<p>In httpd.conf, I commented out the default PHP location and pointed Apache to the Homebrew installation of PHP:</p>
+<pre class="lang:default decode:true "># LoadModule php5_module libexec/apache2/libphp5.so
+LoadModule php5_module /usr/local/Cellar/php55/5.5.11/libexec/apache2/libphp5.so</pre>
+<p>Moodle's install status check and <code>phpinfo()</code> now give me the correct results. </p>

@@ -1,0 +1,33 @@
+---
+author:
+  display_name: Amy G
+  email: amygroshek@gmail.com
+  first_name: Amy
+  last_name: Groshek
+  login: admin
+categories: []
+date: 2013-04-25T15:10:08Z
+excerpt:
+  options: {}
+meta:
+  _edit_last: "1"
+  _wp_old_slug: new-post-about-something-im-reading
+  bfa_virtual_template: hierarchy
+published: true
+status: publish
+tags:
+- moodle
+- php
+title: URL Parameter Security
+type: post
+url: /2013/04/25/url-parameter-security/
+---
+
+<h3>Or, Amy Once Thought She Knew PHP</h3>
+<p>A colleague's peer review turned up a new concern for me today: restricting the format of a URL parameter in PHP. My original entry:</p>
+<pre class="line-height:35 lang:php decode:true">$param = required_param('markup', PARAM_TEXT);</pre>
+<p><span style="font-size: 1em;">And since I didn't actually need to allow alphanum, format could be restricted further:</span></p>
+<pre class="line-height:35 lang:php decode:true">$param = required_param('markup', PARAM_ALPHA);</pre>
+<p><span style="font-size: 1em;">Therefore somewhat inhibiting efforts of insane plotting end-user hacker from sending any old nasty SQL thing into my script.</span></p>
+<blockquote><p>SQL injection is a code injection technique that exploits a security vulnerability in an application's software. The vulnerability happens when <strong>user input is either incorrectly filtered for string literal escape characters embedded in SQL statements or user input is not strongly typed and unexpectedly executed</strong>. ~http://en.wikipedia.org/wiki/SQL_injection</p></blockquote>
+<p>More info on <code>required_param()</code> can be found in <code>lib/moodlelib.php</code>.</p>
