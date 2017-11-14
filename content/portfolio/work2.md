@@ -1,31 +1,30 @@
 +++
 date = "2016-11-05T19:41:01+05:30"
-title = "Test changing title"
+title = "Blank lines improve readability by setting off sections of code that are logically related."
 draft = false
-image = "img/portfolio/business-card-26.jpg"
+image = "img/blank_lines.png"
 showonlyimage = false
 weight = 1
 +++
+<br>
+<br>
+<style>
+	body {background:#ccc;}
+	p {display:block;margin:10px 5px;}
+	.content-column-content .pageTitle, .content-column-content h1 {text-align:center; width:80%; margin-left:auto; margin-right:auto; font-size:45px; text-transform:uppercase;text-shadow:1px 1px 0px black, 2px 2px 0px #FFFFFF, 3px 3px 0px #000000;}
+	.iteration { display:block;width:80%;text-align:center;margin-left:auto;margin-right:auto;padding:40px;font-family:Verdana, Verdana, Geneva, sans-serif;margin:60px auto; background:black;color:#30E320;padding:10px;font-family:Courier New, monospace;border:8px solid #D92EE8;border-radius:10px;}
+	.iteration a {color:orange;}
+	.citations {display:block;margin:20px 10px;border:5px groove #E02DDD;padding:20px;}
+	.commerce {font-size:50px;font-family:Impact, Charcoal, sans-serif;font-style:bold;text-shadow:-2px 2px yellow, -3px 3px yellow, -4px 4px yellow, -5px 5px yellow, -6px 6px yellow, -7px 7px yellow;width:80%;margin-left:auto;margin-right:auto;text-align:center;}
+	.zombie {text-align:right;width:600px;font-family:Arial,Helvetica,sans;border:7px dashed #ddd;padding:10px;border-radius:5px;display:block;margin:10px auto;}
+	.lyric {font-size:18px;font-family:Courier New, monospace;font-weight:normal;color:black;display:block;margin:0 50px 0 200px;}
+</style>
+<div id="eob_target"></div>
 
-When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.
-<!--more-->
+----
 
-Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+What's happening on this page? 
 
-A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+1. 
 
-1. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-2. Aliquam tincidunt mauris eu risus.
 
-> The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn't listen. She packed her seven versalia, put her initial into the belt and made herself on the way.
-
-## Header Level 2
-
-Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
-
-The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn't listen. She packed her seven versalia, put her initial into the belt and made herself on the way.
-
-* Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-* Aliquam tincidunt mauris eu risus.
-
-When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then  
