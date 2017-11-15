@@ -3,12 +3,12 @@ showonlyimage = false
 draft = false
 image = "img/slattery.png"
 date = "2017-11-12"
-title = "Public response to the plagiarism of Andrew Slattery"
+title = "Thank You, Andrew Slattery"
 weight = 1
 +++
 
 
-In 2013 Andrew Slattery was awarded the The Max Harris National Poetry Award. You can still see [his poem, "Grandmother Going Gone"](http://www.unisa.edu.au/PageFiles/37321/MHA%20poems.pdf "PDF"), along with those of  those of other contest winners from that year, on the University of South Australia web site. Slattery's poem contains lines from Sylvia Plath and Seamus Heaney. And from my poem, "Single Life 18," which was published in an online journal, [Contrary Magazine](http://contrarymagazine.com/2011/single-life-18/), in 2011.
+In 2013 Andrew Slattery was awarded the The Max Harris National Poetry Award. You can still see [his ~~poem~~ plagiarized assemblage, "Grandmother Going Gone"](http://www.unisa.edu.au/PageFiles/37321/MHA%20poems.pdf "PDF"), along with those of  those of other contest winners from that year, on the University of South Australia web site. Slattery's ~~poem~~ plagiarized assemblage [contains lines from Sylvia Plath and Seamus Heaney](https://www.theguardian.com/commentisfree/2013/sep/23/australian-poetry-plagiarism). And from my poem "Single Life 18," which was published in an online journal [Contrary Magazine](http://contrarymagazine.com/2011/single-life-18/) in 2011.
 
 My lines:
 
@@ -24,20 +24,23 @@ My lines in "Grandma Going Gone":
 > Mint and basil in
 > the pot opposite the pot of marigolds which the rabbits do not eat.
 
-A philosopher in Canberra named Anthony Hayes (no, not the actor) discovered my poem by Google searching lines of Slattery's poem. [And blogged about it](https://thesinisterquarter.wordpress.com/2013/10/03/plagiarism-for-all-not-just-boring-poets/). No one bothered to tell me. I found Hayes's blog post in 2014 while doing a random Google search of my name.
+An academic in a philosophy department in Canberra named Anthony Hayes (no, not the actor) discovered my poem by Google searching lines of Slattery's ~~poem~~ plagiarized assemblage. [And blogged about it](https://thesinisterquarter.wordpress.com/2013/10/03/plagiarism-for-all-not-just-boring-poets/). No one bothered to tell me. I found Hayes's blog post in 2014 while doing a random Google search of my name.
 
-I am serving the [PDF with this awful poem](../../static/img/MHA-poems.pdf) from my domain as well, so that no one can ever get rid of it. And if anyone is sick enough to come after me with copyright infringement, they'd better have a brilliant story about their sick sense of humor.
+I am serving the [University of South Australia's released award announcement PDF containing Slattery's award-winning plagiarized assemblage](../../static/img/MHA-poems.pdf) from my domain as well, so that no one on the webs can ever surreptitiously get rid of it. If anyone from the University of South Australia is brash enough to come after me with copyright infringement, they'd better have a brilliant story about their sick sense of humor. And Slattery, well, heh. Yeah please do threaten me with copyright infringement. I'd love to hear from you.
 
-And, in addition, I am going to animate the lines of Slattery's plagiarized poem. To permanently dissolve those garish line breaks, to restore some the intensity, interest, and agency of the lines of the great and unknown poets who butressed Slattery's claim to national repute. For the record, I am no Seamus Heaney. I am still struggling to publish. I am queer, crip, and working class. I cannot apply for fellowships or residencies because I have a chronic illness and in the United States the only way to get health insurance with a pre-existing condition is to work full time. So I have spent the last 10 years (in which, at some point, Slattery lifted those lines from my poem) working jobs and losing time. I am not, oh no, I am not going to address Slattery, and I'm not going to call him a poet. But for the rest of you: this is what you do with found things. You transform them. You make them a brilliant, fresh, new composition. Something unmistakable. Something which puts the petty theft of plagiarism to shame. The `iframe` container is not responsive.
+In addition, I am going to animate the lines of Slattery's plagiarized assemblage. To permanently dissolve those garish line breaks, to restore some the intensity, interest, and agency of the lines of the great and unknown poets who butressed Slattery's claim to national repute. For the record, I am no Seamus Heaney. I am still struggling to publish. I am queer, crip, and working class. I cannot apply for fellowships or residencies because I have a chronic illness and in the United States the only way to get health insurance with a pre-existing condition is to work full time. So I have spent the last 10 years (during which, at some point, Slattery lifted those lines from my poem) working jobs and losing time. Andrew Slattery, this is what you do with found things. You transform them. You produce a brilliant, original composition. Something unmistakable. Something which puts the petty theft of plagiarism to shame. **Aaaaand**, you credit your sources. You aren't afraid to credit your sources because what you've done is so utterly distinct from those works. In addition, you **want** to credit your sources, because you respect the artists you emulate. You respect your interlocutors, and you want them to be recognized.
+
+Look, it's so easy. See &uarr; how I've done it? It's the easiest thing in the world!
 
 What's happening on this page?
 
+1. A timer counts down 2 minutes (during which, presumably, you're reading the diatribe above).
 1. A JavaScript query detects a special SVG element in the page, and initializes a special function.
 2. This function fetches a TXT file containing the words to Slattery's "Grandmother Going Gone" with line breaks removed.
 3. The data from the TXT file is split into an array of lines, each containing a random amount of words between 3 and 10.
 4. The special SVG element in the page is expanded to overlay the entire browser viewport.
 5. Each line in the array is inserted into the SVG and animated.
 6. Lines are animated to move at a random angle from the lower left, and bounce off of any border they encounter.
-7. In keeping with words assembled by a plagiarizing poet, the lines lack any behavior in relation to one another.
+7. In keeping with the attributes of Slattery's assemblage, the lines and line breaks lack any meaningful relationship to one another.
 
 <svg id="fuckslattery" width="800" height="600" style="background:transparent;width:0;height:0;"></svg>
