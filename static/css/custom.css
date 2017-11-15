@@ -1,0 +1,73 @@
+/* body {background:#ccc;} */
+.style-eob p {display:block;margin:10px 5px;}
+
+.style-eob .pageTitle,
+.style-eob h1 {
+    text-align:center;
+    width:80%;
+    margin: inherit auto 2em auto;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:35px;
+    text-transform:uppercase;
+    text-shadow:1px 1px 0px black, 2px 2px 0px #FFFFFF, 3px 3px 0px #000000;
+}
+
+.style-eob .iteration {
+    display:block;
+    width:80%;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    padding:40px;
+    font-family:Verdana, Verdana, Geneva, sans-serif;
+    margin:60px auto;
+    background:black;
+    color:#30E320;
+    padding:10px;
+    font-family:Courier New, monospace;
+    border:8px solid #D92EE8;
+    border-radius:10px;
+}
+
+.style-eob .iteration a {
+    color:orange;
+}
+
+.style-eob .citations {
+    display:block;
+    margin:3em 10px;
+    border:5px groove #E02DDD;
+    padding:20px;
+}
+
+.style-eob .commerce {
+    font-size:50px;
+    font-family:Impact, Charcoal, sans-serif;
+    font-style:bold;
+    text-shadow:-2px 2px yellow, -3px 3px yellow, -4px 4px yellow, -5px 5px yellow, -6px 6px yellow, -7px 7px yellow;
+    width:80%;
+    margin: 1em auto;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+.style-eob .zombie {
+    text-align:right;
+    width:600px;
+    font-family:Arial,Helvetica,sans;
+    border:7px dashed #ddd;
+    padding:10px;
+    border-radius:5px;
+    display:block;
+    margin: 1em auto;
+}
+
+.style-eob .lyric {
+    font-size:16px;
+    font-family:Courier New, monospace;
+    font-weight:normal;
+    color:black;
+    display:block;
+    margin:0 50px 0 20px;
+}

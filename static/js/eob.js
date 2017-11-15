@@ -8,13 +8,16 @@ $(document).ready(function() {
     // If the div exists, we start the script.
     if ((that.target).length >= 1) {
         // console.log('we have the target');
+        // Add the body class to content area for CSS hooks.
+        $('.content-column-content').addClass('style-eob');
         console.log('Blank lines improve readability by setting off sections of code that are logically related.' );
         var counter = 0;
+        var max = 35;
         var lineArray = [
             '<blockquote class="commerce">Let there be commerce between us.</blockquote>',
             '<p class="lyric">Dear Amy, A new explanation of benefits (EOB) from UnitedHealthcare is ready for you at myuhc.com showing:</p>',
             '<p class="lyric">Each group of statements <br />(except the default) should <br />end with break,<br /> return,<br /> or <br />throw. <strong><br />Do not fall through.</strong></p>',
-            '<p class="zombie" style="">75% of respondents favor zombie apocalypse to the current state of affairs. Favorable feelings about zombie apocalypse were strongly correlated with a total educational loan debt greater than annual parental income. Racial minorities, homosexuals, and those with pre-existing conditions also favored zombie apocalypse by a factor of 2:1.</p><br />',
+            '<p class="zombie" style="">75% of respondents favor zombie apocalypse to the current state of affairs. Favorable feelings about zombie apocalypse were strongly correlated with a total educational loan debt greater than annual parental income. Racial minorities, homosexuals, and those with pre-existing conditions also favored zombie apocalypse by a factor of 2:1.</p>',
             '<span class="lyric">Being a liberal, I told her, is a bit like being <br />a mother. Year after year you emote</span>',
             '<span class="lyric"> after the proles, you analyze their malaise,<br />you adapt the old texts <br />to new juxtapositions: <br />not malnutrition <br />but obesity, not dusty cross-continental<br /> migrations but work for cash<br />in order to stay below',
             '<span class="lyric"> the $17,000 annual income cutoff for Badgercare. Here</span>',
@@ -40,9 +43,9 @@ $(document).ready(function() {
                 (that.target).append(iterationString);
             }
 
-            if (counter < 20) {runSwitch();}
+            if (counter < max) {runSwitch();}
 
-            if (counter === 20) {
+            if (counter === max) {
                 (that.target).append(citations);
                 clearInterval(pageTimer);
             }

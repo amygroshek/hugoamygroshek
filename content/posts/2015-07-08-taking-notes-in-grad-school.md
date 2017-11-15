@@ -66,7 +66,7 @@ I discovered that there were some beautiful Markdown applications for OSX. [Writ
 
 I already have Sublime Text for development work, but I preferred Atom (ahem, **free**) for this workflow. I installed a few nice, dark-background themes, and discovered the Markdown Preview plugin. I'm authoring the `.md` files in a folder synced to Box.com. If I weren't, I would be using <a href="https://git-scm.com/documentation">git</a> to commit and push my changes to <a href="https://github.com">Github</a> or <a href="https://bitbucket.org">Bitbucket</a>. 
 
-![Atom with Markdown Preview Plugin]({{ site.url }}/img/atom-preview.png "Atom with Markdown Preview Plugin")
+![Atom with Markdown Preview Plugin](/img/atom-preview.png "Atom with Markdown Preview Plugin")
 
 When I write notes by hand, I sketch. I circle words. I draw arrows from one idea to another. I think this is an important aspect of kinesthetic learning. As much as I like plain text, I miss my arrows when I'm typing. So I used Atom's `snippet.cson` file to create a collection of different stars and arrows. (I'm using the cardinal directions for arrow orientation, rather than up/down/left/right.) I also added snippets for Markdown link and image boilerplate.
 

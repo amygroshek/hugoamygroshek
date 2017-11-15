@@ -27,7 +27,7 @@ function Fuckslattery() {
      * @type {[type]}
      */
     this.animateline = function(line) {
-        
+
     };
 
     /**

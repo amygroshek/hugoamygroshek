@@ -53,17 +53,17 @@ Enough complaining. Let's get on to reconfiguring. This part of the article is n
 Here's how we make it work:
 
 1. Navigate to **System Preferences > ...**
-![Navigate to System Preferences]({{ site.url }}/img/1keyboard.png "Navigate to System Preferences")
+![Navigate to System Preferences](/img/1keyboard.png "Navigate to System Preferences")
 **Keyboard > ...**
-![Select Shortcuts]({{ site.url }}/img/2shortcuts.png "Select Shortcuts")
+![Select Shortcuts](/img/2shortcuts.png "Select Shortcuts")
 **Shortcuts > App Shortcuts**. DO NOT be upset by the **lack** of shortcuts listed.
-![App Shortcuts]({{ site.url }}/img/3app.png "App Shortcuts")
+![App Shortcuts](/img/3app.png "App Shortcuts")
 2. Select **+**. This opens a little dialog to add your shortcut.
 3. Leave this settings dialog open and navigate to the application in question. Browse the menu (or use the **Help > Search** functionality) to find the shortcut you want to change. Note the **title** of the shortcut in the menu.
 4. In the shortcut dialog, select the application from the dropdown.
-![Shortcut dialog]({{ site.url }}/img/4dialogapp.png "Shortcut dialog")
+![Shortcut dialog](/img/4dialogapp.png "Shortcut dialog")
 5. For **Menu Title** enter the textual title that appeared in the menu beside the shortcut.
-![Menu Title]({{ site.url }}/img/5menutitle.png "Menu Title")
+![Menu Title](/img/5menutitle.png "Menu Title")
 6. Now, here's where we work our magic. In the **Keyboard Shortcut** field, enter an insanely long and obscure combination of characters. Something you will never randomly type. **Especially** not when you're trying to refresh the page.
-![Enter yer shortcut, yeah!]({{ site.url }}/img/6shortcutcombo.png "Enter yer shortcut, yeah!")
+![Enter yer shortcut, yeah!](/img/6shortcutcombo.png "Enter yer shortcut, yeah!")
 7. Grin (alternatively, laugh like a maniac) and select **Add**.

@@ -48,7 +48,7 @@ I love the Box.com storage provided by the university. But I'm not too psyched a
 
 Also, and I know this isn't a huge deal, but **Box.com's app has a space in the directory name**! Seriously. Who even does that? Who?! It annoys me to no end to have to add that forward slash every time I `cd` into the directory.: `cd ~/Box\ Sync`. It annoys me because I **cannot change the folder name using the application's preferences**. That's right. The app has a space in its folder name, AND I cannot rename it. I know how, but am **still** reduced to extra typing or the simplistic, patronizing workflow of people who click on folder icons in Finder. 
 
-![Box.com's sync app with space in file name]({{ site.url }}/img/box-space-file-name.png "Box.com's sync app with space in file name")
+![Box.com's sync app with space in file name](/img/box-space-file-name.png "Box.com's sync app with space in file name")
 
 Finally, why would I have Box Sync versioning my text files if I could just have git do it, and control and automate it in my own way? 
 
@@ -56,7 +56,7 @@ Finally, why would I have Box Sync versioning my text files if I could just have
 
 Instead I have set up a directory synced to a private git repo. Housed within `~/notebook` are several directories which correspond to my various use cases. Generally, I'm either journaling, writing, working, or taking reading notes. 
 
-![Notebook directory setup]({{ site.url }}/img/md-notebook-directories.png "Notebook directory setup")
+![Notebook directory setup](/img/md-notebook-directories.png "Notebook directory setup")
 
 This has the advantage of being easily updated (and not dependent upon the whims of Box Sync) on all of my machines. When I'm about to go to work on a new journal entry, a new work note, whatever, I just update the repo locally using the command line:
 
@@ -77,7 +77,7 @@ The additional awesomeness of [Pandoc](http://pandoc.org/demos.html) and [LibreO
 
 The ODT file format cannot be versioned line-by-line with git, but the [FODT XML format](http://blog.riemann.cc/2013/04/23/versioning-of-openoffice-libreoffice-documents-using-git/#comment-951298408 FODT XML format) can. So I can save my documents in this file format and then git **can** do line-by-line versioning on them:
 
-![Save as FODT]({{ site.url }}/img/fodt.png "Save as FODT")
+![Save as FODT](/img/fodt.png "Save as FODT")
 
 And when I'm ready to turn in the paper, LibreOffice can export the PDF or DOCX file I need. 
 
@@ -89,25 +89,25 @@ The solution is disgustingly simple. After all, I don't want these files clutter
 
 In Google Drive, `Alt + click` on an asset to open the menu:
 
-![Drive share menu]({{ site.url }}/img/drive-share1.png)
+![Drive share menu](/img/drive-share1.png)
 
 Copy and paste the provided URL as necessary. I'm using the "Anyone on the Internet" for these assets. But be aware that this does make the asset findable on the Web.
 
-![Drive share URL access]({{ site.url }}/img/drive-share2.png)
+![Drive share URL access](/img/drive-share2.png)
 
 Box.com gives me an *extremely* convenient `<iframe>`. 
 
 Select the **Share** link:
 
-![Drive share link]({{ site.url }}/img/box-share1.png)
+![Drive share link](/img/box-share1.png)
 
 Select the **Embed** button:
 
-![Drive share embed modal]({{ site.url }}/img/box-share2.png)
+![Drive share embed modal](/img/box-share2.png)
 
 The resulting embedded files are sweet little reminder of what I'm referencing. It's just enough, and keeps my cloud assets centrally documented in searchable, versioned notes. Here's a screencap of a Box.com `<iframe>` embed as rendered in Atom's Markdown Preview:
 
-![Box iframe]({{ site.url }}/img/md-iframe.png)
+![Box iframe](/img/md-iframe.png)
 
 
 
