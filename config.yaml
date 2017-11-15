@@ -56,21 +56,6 @@ params:
      # - you're done. Happy mailing!
   email: "amygroshek@gmail.com"
 
-  # Nav links in the side bar
-  # [[params.navlinks]]
-  # navlinks:
-  #   - name: "home"
-  #     url: ""
-  #   - name: "posts"
-  #     url: "post/"
-  #   - name: "cv"
-  #     url: "cv/"
-  #   - name: "contact"
-  #     url: "contact/"
-  #   - name: "hire"
-  #     url: "http://hire.amygroshek.com"
-  #     external: "true"
-
   social:
   # facebook      = "full page or profile url in facebook"
   #  googleplus    = "full profile url in googleplus"
@@ -80,4 +65,3 @@ params:
     stackoverflow: "https://stackoverflow.com/users/590107/brokenindexfinger"
   # instagram     = "full profile url in instagram"
     github: "https://github.com/amygroshek"
-

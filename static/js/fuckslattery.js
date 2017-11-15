@@ -17,7 +17,7 @@ function Fuckslattery() {
     this.source = '';
     this.txtpath = '';
     this.lines = [];
-    this.canvas = null;
+    this.svg = null;
     this.context = null;
     this.windowwidth = null;
     this.windowheight = null;
@@ -34,14 +34,14 @@ function Fuckslattery() {
      * Init the canvas and store it in an object.
      * @return Boolean true/false on success/failure of initializing canvas
      */
-    this.initcanvas = function() {
+    this.initsvg = function() {
         // TODO: Switch this to raphael.js so we can animate objects more easily.
-        console.log('initcanvas');
+        console.log('initsvg');
         $('#'+that.target).attr({'height':that.windowheight,'width':that.windowwidth});
-        // Init the canvas and store it in an object.
-        that.canvas = document.getElementById(that.target);
-        that.context = that.canvas.getContext("2d");
-        if ((that.canvas).length > 0) {
+        // Init the svg and store it in an object.
+        that.svg = Snap('#'+that.target);
+        // console.log(that.svg);
+        if ((that.svg).length > 0) {
             return true;
         } else {
             return false;
@@ -54,7 +54,8 @@ function Fuckslattery() {
      */
     this.putline = function(line) {
         console.log('putline');
-        if (that.canvas && that.context) {
+        // var bigCircle = that.svg.circle(150, 150, 100);// that.svg = that.canvas.getContext("2d");
+        if (that.svg) {
             // Canvas and context objects exist so we can continue.
             // Generate a random direction of travel.
             // Apply the bounce.
@@ -71,7 +72,7 @@ function Fuckslattery() {
             var animated = that.animateline(canvasline);
         } else {
             console.error('There was a problem initializing the canvas object. Triggering init function again.');
-            that.initcanvas();
+            that.initsvg();
         }
     };
 
@@ -83,7 +84,7 @@ function Fuckslattery() {
     this.insert = function() {
         console.log('animate');
         console.log(that.lines);
-        var tryinit = that.initcanvas();
+        var tryinit = that.initsvg();
         var timer = setInterval(function(){
             if ((that.lines).length < 1) {
                 clearInterval(timer);
