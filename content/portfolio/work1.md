@@ -3,7 +3,7 @@ showonlyimage = false
 draft = false
 image = "img/slattery.png"
 date = "2017-11-12"
-title = "Thank You, Andrew Slattery"
+title = "No Thank You, Andrew Slattery"
 weight = 1
 +++
 
