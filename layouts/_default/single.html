@@ -6,7 +6,9 @@
       <div class="content-column-content">
          <h1>{{ .Title }}</h1>
          {{ .Content }}
-
+         {{ if eq .Section "posts" }}
+            {{ template "_internal/disqus.html" . }}
+        {{ end }}
       </div>
     </div>
   </div>
