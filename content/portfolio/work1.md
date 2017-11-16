@@ -40,7 +40,11 @@ What's happening on this page?
 3. The data from the TXT file is split into an array of lines, each containing a random amount of words between 3 and 10.
 4. The special SVG element in the page is expanded to overlay the entire browser viewport.
 5. Each line in the array is inserted into the SVG and animated.
-6. Lines are animated to move at a random angle from the lower left, and bounce off of any border they encounter.
+6. Lines are animated to move at a random angle from the lower left, and bounce off of any border they encounter. (I modified a prototype by [Mike Heavers](http://mikeheavers.com/tutorials/collisions_proximity_detection_in_snap/) to implement the bounce. Though I'd like to come back to this and make the bounce angles more realistic.)
 7. In keeping with the attributes of Slattery's assemblage, the lines and line breaks lack any meaningful relationship to one another.
 
+<button id="startfuckslattery" class="btn btn-ghost">Start the show!</button>
+
 <svg id="fuckslattery" width="800" height="600" style="background:transparent;width:0;height:0;"></svg>
+
+<div id="clickresponse" style="height:0;width:0;"></div>
