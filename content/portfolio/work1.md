@@ -34,8 +34,7 @@ Look, it's so easy. See &uarr; how I've done it? It's the easiest thing in the w
 
 What's happening on this page?
 
-1. A timer counts down 2 minutes (during which, presumably, you're reading the diatribe above).
-1. A JavaScript query detects a special SVG element in the page, and initializes a special function.
+1. On button click, a JavaScript query verifies a special SVG element in the page, then initializes a function.
 2. This function fetches a TXT file containing the words to Slattery's "Grandmother Going Gone" with line breaks removed.
 3. The data from the TXT file is split into an array of lines, each containing a random amount of words between 3 and 10.
 4. The special SVG element in the page is expanded to overlay the entire browser viewport.
