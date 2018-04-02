@@ -54,12 +54,12 @@ params:
      # - send a dummy email yourself to confirm your account
      # - click the confirm link in the email from www.formspree.io
      # - you're done. Happy mailing!
-  email: "amygroshek@gmail.com"
+  email: "amy@amygroshek.com"
 
   social:
   # facebook      = "full page or profile url in facebook"
   #  googleplus    = "full profile url in googleplus"
-    email: "amygroshek@gmail.com"
+    email: "amy@amygroshek.com"
     twitter: "https://twitter.com/amygroshek"
     linkedin: "https://www.linkedin.com/in/amy-groshek-b7a2683/"
     stackoverflow: "https://stackoverflow.com/users/590107/brokenindexfinger"
