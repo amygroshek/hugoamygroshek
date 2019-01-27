@@ -1,11 +1,10 @@
 baseURL: '/'
 disablePathToLower: true
 languageCode: en-us
-title: Amy Groshek
-theme: hugo-creative
-title: Avocation and Vocation
+title: "Amy Groshek"
+theme: "hugo-creative"
+title: "Avocation and Vocation"
 relativeURLs: true
-languageCode: en-us
 # Enable comments by entering your Disqus shortname
 disqusShortname: "amygroshek"
 # Enable Google Analytics by entering your tracking code
