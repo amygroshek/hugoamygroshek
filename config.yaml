@@ -1,4 +1,4 @@
-baseURL: http://amygroshek.com
+baseURL: '/'
 disablePathToLower: true
 languageCode: en-us
 title: Amy Groshek
