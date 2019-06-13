@@ -71,3 +71,12 @@
     display:block;
     margin:0 50px 0 20px;
 }
+
+.content-column-content img {
+  width: 100% !important;
+  height: auto;
+}
+
+.sidebar-content {
+  padding-right: 40px;
+}
