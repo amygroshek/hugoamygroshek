@@ -55,6 +55,6 @@ Dystopia is not exactly what is happening now. Dystopia portrays what happens af
 
 That, of course, is a larger topic, and one perhaps best reserved for doctoral dissertations. But in the meantime, if you're scared, remember that feeling. If you feel peace, if you have noticed how many couples are out in the sun today in your neighborhood, walking dogs, walking with their spouse and children, remember that feeling. If you feel vindicated, if you will struggle this month to pay your rent or feed your children, remember that feeling. And when (if) things go back to normal, and it's time for you to vote, or attend a protest, or attend a neighborhood or school board or township meeting, don't forget what COVID-19 shows us. Dystopia is meaningful and beautiful because it is never an eventuality. This world wasn't built for us, but it could be. 
 
-<a name="note1">1</a>: "Walk with Us", *The Walking Dead*. *Amazon Prime*, S10:E12, 14:14 [↩](#a1)
-<a name="note2">2</a>: "Walk with Us", *The Walking Dead*. *Amazon Prime*, S10:E12, 15:00 [↩](#a2)
+<a name="note1">1</a>: "Walk with Us", *The Walking Dead*. *Amazon Prime*, S10:E12, 14:14 [↩](#a1)  
+<a name="note2">2</a>: "Walk with Us", *The Walking Dead*. *Amazon Prime*, S10:E12, 15:00 [↩](#a2)  
 <a name="note3">3</a>: "Walk with Us", *The Walking Dead*. *Amazon Prime*, S10:E12, 2:43 [↩](#a3)
