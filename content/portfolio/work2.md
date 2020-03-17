@@ -2,7 +2,7 @@
 date = "2016-11-05T19:41:01+05:30"
 title = "Blank lines improve readability by setting off sections of code that are logically related."
 draft = false
-image = "img/blank_lines.png"
+image = "/img/blank_lines.png"
 showonlyimage = false
 weight = 1
 +++

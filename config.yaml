@@ -28,7 +28,7 @@ menu:
       - Name: "contact"
         URL: "/contact/"
         Weight: 4
-      - Name: "hire"
+      - Name: "hire me!"
         Pre: ""
         URL: "http://hire.amygroshek.com"
         Weight: 5
