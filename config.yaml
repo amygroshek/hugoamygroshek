@@ -41,7 +41,7 @@ params:
   copyright: "&copy; Amy Groshek 2012 onwards"
   sidebarAbout: [
     "I am a PhD student, sometime poet, freelance web developer, and Argentine tango instructor.",
-    "This landing page showcases my electronic poetry projects. Most of my electronic literature uses programming languages and web browsers as formal constraints."
+    "The landing page showcases my electronic poetry projects. Most of my electronic literature uses programming languages and web browsers as formal constraints."
   ]
   # Contact page
      # Since this template is static, the contact form uses www.formspree.io as a
