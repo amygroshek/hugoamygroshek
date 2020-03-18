@@ -37,14 +37,22 @@
   {{ else }}
     <meta property="og:description" content="{{ $.Site.Params.description }}" />
   {{ end }}
-  <meta property="og:url" content="{{ $.Site.Params.domain }}" />
+  {{ if .Params.url }}
+    <meta property="og:url" content="{{ $.Site.Params.domain }}{{ .Params.url }}" />
+  {{ else }}
+    <meta property="og:url" content="{{ $.Site.Params.domain }}" />
+  {{ end }}
   <meta property="og:site_name" content="{{ .Site.Title }} by {{ $.Site.Params.author }}" />
   {{ if .Params.image }}
     <meta property="og:image" content="{{ $.Site.Params.domain }}{{ .Params.image }}" />
   {{ else }}
     <meta property="og:image" content="https://amygroshek.com/img/apple-touch-icon-precomposed.png" />
   {{ end }}
-  <meta property="og:image:secure_url" content="{{ $.Site.Params.domain }}" />
+  {{ if .Params.url }}
+    <meta property="og:image:secure_url" content="{{ $.Site.Params.domain }}{{ .Params.url }}" />
+  {{ else }}
+    <meta property="og:image:secure_url" content="{{ $.Site.Params.domain }}" />
+  {{ end }}
   <!-- Twitter metadata -->
   <meta name="twitter:card" content="summary_large_image" />
   {{ if .Site.Data.social.twitter }}
