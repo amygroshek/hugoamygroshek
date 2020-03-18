@@ -80,3 +80,7 @@
 .sidebar-content {
   padding-right: 40px;
 }
+
+.masonry-item:last-of-type {
+  display: none;
+}
