@@ -33,7 +33,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="{{ .Site.Title }} | {{ .Title }}" />
   {{ if .Params.excerpt }}
-    <meta property="og:image" content="{{ .Params.excerpt }}" />
+    <meta property="og:description" content="{{ .Params.excerpt }}" />
   {{ else }}
     <meta property="og:description" content="{{ $.Site.Params.description }}" />
   {{ end }}
