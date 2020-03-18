@@ -1,7 +1,6 @@
 baseURL: '/'
 disablePathToLower: true
 languageCode: en-us
-title: "Amy Groshek"
 theme: "hugo-creative"
 title: "Avocation and Vocation"
 relativeURLs: true
@@ -35,11 +34,14 @@ menu:
 params:
   # Style options: default (pink), blue, green, pink, red, sea, violet
   style: pink
-  description: "Avocation and Vocation"
+  title: "Avocation and Vocation"
+  author: "Amy Groshek"
+  domain: https://amygroshek.com
+  description: I am a PhD student, sometime poet, freelance web developer, and Argentine tango instructor.
   copyright: "&copy; Amy Groshek 2012 onwards"
   sidebarAbout: [
     "I am a PhD student, sometime poet, freelance web developer, and Argentine tango instructor.",
-    "The landing page showcases my electronic poetry projects. Most of my electronic literature uses programming languages and web browsers as formal constraints."
+    "This landing page showcases my electronic poetry projects. Most of my electronic literature uses programming languages and web browsers as formal constraints."
   ]
   # Contact page
      # Since this template is static, the contact form uses www.formspree.io as a

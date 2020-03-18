@@ -8,8 +8,8 @@ author:
 categories: ["dystopia", "dissertation", "literature", "films"]
 comments: true
 date: 2020-03-17T00:00:00Z
-excerpt:
-  options: {}
+excerpt: "I study dystopia. Or, rather, I study the narrative works, the poems, fiction, and films, which portray dystopia. For the last two years, in fact, I've sat down ever morning at my desk to study dystopian narratives and think about why we create them, what they mean, and how they can be most useful to us in a time of more or less impending, unalterable anthropogenic (man-made) climate change."
+image: /img/zombies.png
 meta:
   _edit_last: "1"
 published: true
