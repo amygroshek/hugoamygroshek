@@ -8,7 +8,7 @@ author:
 categories: ["dystopia", "dissertation", "literature", "films"]
 comments: true
 date: 2020-03-17T00:00:00Z
-excerpt: "I study dystopia. Or, rather, I study the narrative works, the poems, fiction, and films which portray dystopia. For the last two years, in fact, I've sat down ever morning at my desk to study dystopian narratives and think about why we create them, what they mean, and how they can be most useful to us in a time of more or less impending, unalterable anthropogenic (man-made) climate change."
+excerpt: "I study dystopia. Or, rather, I study the narrative works, the poems, fiction, and films which portray dystopia. For the last two years, in fact, I've sat down every morning at my desk to study dystopian narratives and think about why we create them, what they mean, and how they can be most useful to us in a time of more or less impending, unalterable anthropogenic (man-made) climate change."
 image: /img/zombies.png
 meta:
   _edit_last: "1"
@@ -27,7 +27,7 @@ url: /2020/03/17/heartbreak-and-joy-of-dystopia/
 ![*The Walking Dead* S10:E12 14:14](/img/zombies.png "Zombies in forest in The Walking Dead Season 10, episode 12 14:14")
 <span>The remains of Alpha's horde.<sup id="a1">[1](#note1)</sup></span>
 
-I study dystopia. Or, rather, I study the narrative works, the poems, fiction, and films which portray dystopia. For the last two years, in fact, I've sat down ever morning at my desk to study dystopian narratives and think about why we create them, what they mean, and how they can be most useful to us in a time of more or less impending, unalterable anthropogenic (man-made) climate change. This is lost on almost no one, but I'll say it anyway: what is happening now is a mere two or three ticks of the proverbial [doomsday clock](https://en.wikipedia.org/wiki/Doomsday_Clock) from the rioting, tribalism, and violent resource competition portrayed in most apocalyptic films about contagion or zombies.
+I study dystopia. Or, rather, I study the narrative works, the poems, fiction, and films which portray dystopia. For the last two years, in fact, I've sat down every morning at my desk to study dystopian narratives and think about why we create them, what they mean, and how they can be most useful to us in a time of more or less impending, unalterable anthropogenic (man-made) climate change. This is lost on almost no one, but I'll say it anyway: what is happening now is a mere two or three ticks of the proverbial [doomsday clock](https://en.wikipedia.org/wiki/Doomsday_Clock) from the rioting, tribalism, and violent resource competition portrayed in most apocalyptic films about contagion or zombies.
 
 ![*The Walking Dead* S10:E12 15:00](/img/hiding-in-van.png "Hiding in a van in The Walking Dead Season 10, episode 12 15:00")
 <span>Waiting it out in a van. This happens a lot in *The Walking Dead*.<sup id="a2">[2](#note2)</sup></span>
