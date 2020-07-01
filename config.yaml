@@ -29,16 +29,16 @@ menu:
         Weight: 4
       - Name: "hire me!"
         Pre: ""
-        URL: "http://hire.amygroshek.com"
+        URL: "https://hire.lougroshek.com"
         Weight: 5
 params:
   # Style options: default (pink), blue, green, pink, red, sea, violet
   style: pink
   title: "Avocation and Vocation"
-  author: "Amy Groshek"
+  author: "Lou Groshek"
   domain: https://amygroshek.com
   description: I am a PhD student, sometime poet, freelance web developer, and Argentine tango instructor.
-  copyright: "&copy; Amy Groshek 2012 onwards"
+  copyright: "&copy; Lou Groshek 2012 onwards"
   sidebarAbout: [
     "I am a PhD student, sometime poet, freelance web developer, and Argentine tango instructor.",
     "The landing page showcases my electronic poetry projects. Most of my electronic literature uses programming languages and web browsers as formal constraints."
@@ -55,12 +55,12 @@ params:
      # - send a dummy email yourself to confirm your account
      # - click the confirm link in the email from www.formspree.io
      # - you're done. Happy mailing!
-  email: "amy@amygroshek.com"
+  email: "lou@lougroshek.com"
 
   social:
   # facebook      = "full page or profile url in facebook"
   #  googleplus    = "full profile url in googleplus"
-    email: "amy@amygroshek.com"
+    email: "lou@lougroshek.com"
     twitter: "https://twitter.com/amygroshek"
     linkedin: "https://www.linkedin.com/in/amy-groshek-b7a2683/"
     stackoverflow: "https://stackoverflow.com/users/590107/brokenindexfinger"
